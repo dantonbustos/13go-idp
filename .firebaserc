@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "prueba-staging-idp-13go",
+    "staging": "prueba-staging-idp-13go",
+    "prod": "prueba-prod-13go-idp"
+  },
+  "targets": {},
+  "etags": {}
+}
