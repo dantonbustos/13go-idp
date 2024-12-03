@@ -18,3 +18,7 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PRUEBA_STAGING_IDP_13GO }}
           channelId: live
           projectId: prueba-staging-idp-13go
+      - name: Reemplaza Parametros Staging
+        run:  | 
+          sed -i -e 's/apiKey: "0987654321"/apiKey: "1234567890"/g' public/index.html
+          sed -i -e 's/authDomain: "staging.13.cl"/authDomain: "staging.13.cl"/g' public/index.html
